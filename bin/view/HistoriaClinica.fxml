@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HistoriaClinica">
+   <children>
+      <Label layoutX="261.0" layoutY="20.0" text="Historia Clinica">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBuscr" layoutX="485.0" layoutY="71.0" mnemonicParsing="false" onAction="#buscarCedula" text="Buscar" />
+      <Label layoutX="91.0" layoutY="75.0" text="Cedula:" />
+      <TextField fx:id="txtCedula" layoutX="187.0" layoutY="71.0" prefHeight="25.0" prefWidth="237.0" promptText="Ingrese la cedula del dueño de la mascota" />
+      <TableView fx:id="tableDatos" layoutX="155.0" layoutY="211.0" prefHeight="200.0" prefWidth="302.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Nombre " />
+          <TableColumn prefWidth="75.0" text="Edad" />
+            <TableColumn prefWidth="75.0" text="Sexo" />
+            <TableColumn prefWidth="75.0" text="Raza" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
