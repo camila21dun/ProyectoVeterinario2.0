@@ -145,27 +145,27 @@ public class Main extends javafx.application.Application {
 			return clinica.eliminarRegistro(codigo);
 
 		}
-	    
+
 	    public Cliente buscarCliente(String cedula) throws ClienteException{
 	    return clinica.buscarCliente(cedula);
 	    }
-	    
+
 	    public Veterinario buscarVeterinario(String codigo) throws ClienteException{
 		    return clinica.buscarVeterinario(codigo);
 		    }
-	    
+
 	    public void atencionVeterinaria(Estado estado,LocalDate fecha, Mascota mascota, Veterinario veterinario) throws ClienteException{
 	    	 clinica.CrearCitas(estado,fecha,mascota,veterinario);
 
 	    }
 
 		public Cliente buscarCliente(Cliente cliente) {
-			return clinica.buscarCliente(cedula)
-			
+			return clinica.buscarCliente(cedula);
+
 
 			return null;
 		}
-	    
+
 
 
 
